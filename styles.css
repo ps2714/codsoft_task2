@@ -1,0 +1,161 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #34648d;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2582b8;
+}
+
+.slides {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.slide {
+    scroll-snap-align: start;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 2rem;
+    transition: background 0.3s;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.5rem;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h2 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content img {
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid #3498db;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #3498db;
+    color: #fff;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+ul li:hover {
+    background: #2980b9;
+}
+
+.project {
+    margin: 1rem 0;
+    padding: 1rem; 
+    border: 1px solid #3498db;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.project h3 {
+    color: #3498db;
+    margin-bottom: 0.5rem;
+}
+
+.project img {
+    max-width: 100%;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+a {
+    display: inline-block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background-color: #3498db;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+a:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #2c3e50;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
